@@ -8,13 +8,15 @@ The caption for Figure 1-3 is “Instruction format for data processing instruct
 
 ***
 
-On **page 54** [code]:
- 
-In the commented line:
+On **page 53 and 54** [code, technical accuracy]:
 
-// W0 is the return code and will be what we
+On page 53, a sentence writes `The second instruction, ADDC, adds the higher-order words, plus the carry flag.`  where the `ADDC` instruction doesn't exist. It should write `ADC` instead. 
 
-W0 register is not used in the source code, X0 is rather used and the line should display `// X0 is the return code and will be what we`
+In `Listing 2.4` on the commented line:
+
+`// W0 is the return code and will be what we`
+
+W0 register is not used in the source code, X0 is rather used. The comment line should display `// X0 is the return code and will be what we`
 ]
 
 ***
