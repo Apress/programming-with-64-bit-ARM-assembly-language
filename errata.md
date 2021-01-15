@@ -3,7 +3,18 @@
 
 On **page 14** [technical accuracy]:
  
-The caption for Figure 1-3 is ìInstruction format for data processing instructionsî And the text discusses bits in ARM instructions. But the figure shows command line instructions for compiling and running a program.
+The caption for Figure 1-3 is ‚ÄúInstruction format for data processing instructions‚Äù And the text discusses bits in ARM instructions. But the figure shows command line instructions for compiling and running a program.
+]
+
+***
+
+On **page 110** [code, technical accuracy]:
+ 
+In the line:
+
+label: .byte 74, 0112, 0b00101010, 0x4A, 0X4a, 'J', 'H' +2
+
+The binary value should read 0b01001010.
 ]
 
 ***
@@ -20,7 +31,7 @@ The offsets should be positive, not negative because FP was initialized with `SU
 
 ***
 
-On **page 165** [Code, Technical Accuracy]:
+On **page 165** [code, technical accuracy]:
  
 The code "ldr X1, =timespecsec" uses the incorrect lable. It should be "ldr X1, =timespecnano".
 ]
