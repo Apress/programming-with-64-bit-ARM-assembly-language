@@ -24,3 +24,17 @@ On **page 165** [Code, Technical Accuracy]:
  
 The code "ldr X1, =timespecsec" uses the incorrect lable. It should be "ldr X1, =timespecnano".
 ]
+
+***
+
+On **page 284** [Code, Technical Accuracy]:
+ 
+The code `B.LE  notequal` should be replaced by `B.GE  notequal`. The existing code returns incorrect result (i.e., 0 if they are equal, else 1).
+]
+
+***
+
+On **page 285** [Code]:
+ 
+Immediately after the loop (i.e., after `B.NE  loop`), the code should store S1 to memory at location runsum. This is necessary for the right values to be passed to fpcomp function later on.
+]
